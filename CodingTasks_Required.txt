@@ -8,6 +8,7 @@ As a final note, use your best judgement and common sense if you have any questi
 
 IMPORTANT TIPS:  
 
+<<<<<<< HEAD
 Our platform consists of mostly VB.NET, with use of ADO.NET for database interaction.  While we love Entity Framework, we don’t use it here.  Please make use of ADO.NET.  C# IS OK.
 Please put each Task into its own folder so it’s easier for us to review.
 Please make sure your solution for each task works “out of the box”.  One common thing we run into is the MDB file is stored in a hard-coded location on your computer.  When shared with us, that directory doesn’t exist, so we must modify your solution, so it knows where the MDB file is.  Make use of relative paths to avoid this issue.
@@ -16,6 +17,16 @@ The task descriptions are basic by design.  You can differentiate yourself by fi
 
 
 
+=======
+1. Our platform consists of mostly VB.NET, with use of ADO.NET for database interaction.  While we love Entity Framework, we don’t use it here.  Please make use of ADO.NET.  C# IS OK.
+2. Please put each Task into its own folder so it’s easier for us to review.
+3. Please make sure your solution for each task works “out of the box”.  One common thing we run into is the MDB file is stored in a hard-coded location on your computer.  When shared with us, that directory doesn’t exist, so we must modify your solution, so it knows where the MDB file is.  Make use of relative paths to avoid this issue.
+4. The task descriptions are basic by design.  You can differentiate yourself by filling in the gaps.  For example, I don’t describe what your form should look like when creating a new Customer.   This is a great opportunity for you to make your form look good.   This is also a great opportunity for you to create your own customer experience.  How would you design it if you were building this for your customers?  Please take advantage of this opportunity.
+
+
+
+
+>>>>>>> a641d00b898ffc5373f3f077092b4690dc0267ff
 Your database
 We have attached a CustomersDb.mdb file that will serve as your test database.  This file contains the Customers table that is referenced in the tasks below.  
 
@@ -35,3 +46,7 @@ Please create an ASP.NET MVC project using VB.NET that will support basic CRUD o
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a641d00b898ffc5373f3f077092b4690dc0267ff
