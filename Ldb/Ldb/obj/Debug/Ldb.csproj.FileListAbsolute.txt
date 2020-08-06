@@ -72,3 +72,5 @@ C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\obj\Debug\Ldb.csproj.CoreCompileInputs.cac
 C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\obj\Debug\Ldb.csproj.CopyComplete
 C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\obj\Debug\Ldb.dll
 C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\obj\Debug\Ldb.pdb
+C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\bin\System.Data.SqlClient.dll
+C:\Users\rouni\Desktop\Kansas\Ldb\Ldb\bin\System.Data.SqlClient.xml
