@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ldb", "Ldb\Ldb.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ldb.Tests", "Ldb.Tests\Ldb.Tests.csproj", "{AEA98123-9397-403B-B1E1-BD2E54606911}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ldb_mvc1", "ldb_mvc1\ldb_mvc1.csproj", "{024FF848-6013-41BA-9D15-456EE5062C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AEA98123-9397-403B-B1E1-BD2E54606911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA98123-9397-403B-B1E1-BD2E54606911}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA98123-9397-403B-B1E1-BD2E54606911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024FF848-6013-41BA-9D15-456EE5062C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024FF848-6013-41BA-9D15-456EE5062C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024FF848-6013-41BA-9D15-456EE5062C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024FF848-6013-41BA-9D15-456EE5062C57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
