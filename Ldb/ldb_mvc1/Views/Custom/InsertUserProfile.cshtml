@@ -32,18 +32,26 @@
         @Html.ValidationMessageFor(Model=>Model.firstName)
     </div>
     <div class="editor-label">
-        @Html.LabelForModel(Model.middleName)
+        @Html.LabelFor(Model=>Model.middleName)
     </div>
     <div class="editor-field">
-        @Html.EditorForModel(Model.middleName)
+        @Html.EditorFor(Model=>Model.middleName)
         @Html.ValidationMessageFor(Model=>Model.middleName)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(Model=>Model.email)
+        @Html.ValidationMessageFor(Model=>Model.email)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(Model=>Model.email)
+        @Html.ValidationMessageFor(Model => Model.email)
     </div>
     <p>
         <input type="submit" value="Create"/>
     </p>
 </fieldset>
     <div>
-        @Html.ActionLink("Back to List","Index")
+        @Html.ActionLink("Back to List","Index","Home")
     </div>
 </body>
 </html>
