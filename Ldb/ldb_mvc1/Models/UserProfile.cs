@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace ldb_mvc1.Models
         public int id { get; set; }
 
         [Required(ErrorMessage ="Enter First Name")]
+        [Display(Name ="YoungGodz")]
         public string firstName { get; set; }
 
         public string middleName { get; set; }
@@ -33,7 +35,7 @@ namespace ldb_mvc1.Models
         public int department { get; set; }
         public string userPictureUrl { get; set; }
 
-        public List<UserProfile> UserProfiles { get; set; }
+        public List<UserProfile> ShowAllUserProfiles { get; set; }
 
 
     }

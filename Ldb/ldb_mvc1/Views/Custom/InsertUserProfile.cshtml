@@ -1,0 +1,49 @@
+﻿@model ldb_mvc1.Models.UserProfile
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InsertUser</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    @using (Html.BeginForm())
+    { 
+        @Html.ValidationSummary(true)
+        
+    }
+<fieldset>
+    <legend>New User</legend>
+    <div class=" editor-label">
+        @Html.LabelFor(Model => Model.firstName)
+    </div>
+    <div class="eidtor-field">
+        @Html.EditorFor(Model => Model.firstName)
+        @Html.ValidationMessageFor(Model=>Model.firstName)
+    </div>
+    <div class="editor-label">
+        @Html.LabelForModel(Model.middleName)
+    </div>
+    <div class="editor-field">
+        @Html.EditorForModel(Model.middleName)
+        @Html.ValidationMessageFor(Model=>Model.middleName)
+    </div>
+    <p>
+        <input type="submit" value="Create"/>
+    </p>
+</fieldset>
+    <div>
+        @Html.ActionLink("Back to List","Index")
+    </div>
+</body>
+</html>
