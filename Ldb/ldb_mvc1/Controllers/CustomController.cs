@@ -83,20 +83,20 @@ namespace ldb_mvc1.Controllers
         public ActionResult Delete(int user_id)
         {
             DataAccessLayer db = new DataAccessLayer();
-            UserProfile user = new UserProfile();/**/
+            UserProfile user = new UserProfile();
             return View(db.RetrieveById(user_id));
         }
-        /* [HttpPost]
-     public ActionResult Delete(int user_id)
-       {
+        [HttpPost]
+        public ActionResult Delete(UserProfile user)
+        {
 
-           DataAccessLayer db = new DataAccessLayer();
-           string result = db.DeleteData(user_id);
-           ViewData["result"] = result;
-           ModelState.Clear();
-           return View();
+            DataAccessLayer db = new DataAccessLayer();
+            string result = db.DeleteData(user.id);
+            ViewData["result"] = result;
+            ModelState.Clear();
+            return View();
 
-       }*/
+        }
 
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TRUeRtoIF3dh/tummKDsKKdX5HWlrSYUk7ZGOYuBNDnJfpFKje4+LmTBdc8xgYNUQkzAS1X5HJ3Q6nfYNqBKsQ==",
+  "dgSpecHash": "XoHRvkV7/7T577AAjvrHh70mgBvzG59eXOGicU+Ynu6XmsNged8qiFwK/66Loj7/B0de13VelhkSiBG3Va81uA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
+  "projectFilePath": "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rouni\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\rouni\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

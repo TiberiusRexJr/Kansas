@@ -89,7 +89,7 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.id },"Home") 
                 @Html.ActionLink("Details", "Details", new { id = item.id },"Home") 
-                @Html.ActionLink("Delete", "Delete", new { id = item.id },"Custom")
+                @Html.ActionLink("Delete", "Delete", new { user_id = item.id },"Custom")
             </td>
         </tr>
 }
