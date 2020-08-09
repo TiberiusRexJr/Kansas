@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 
 using System.Linq;
-
+using System.Security.Cryptography.Xml;
 using System.Web;
 using ldb_mvc1.Controllers.DataAccess;
 using ldb_mvc1.Models;
@@ -50,14 +50,15 @@ namespace ldb_mvc1.Controllers
             DataAccessLayer db = new DataAccessLayer();
             user.ShowAllUserProfiles = db.RetrieveProfiles();
             return View(user);
+
         }
 
         [HttpGet]
-        public ActionResult Edit(string ID)
+        public ActionResult Edit(int ID)
         {
             UserProfile user = new UserProfile();
             DataAccessLayer db = new DataAccessLayer();
-            return View(db.RetrieveByEmail(ID));
+            return View(db.RetrieveById(ID));
         }
 
         [HttpPost]
@@ -79,23 +80,23 @@ namespace ldb_mvc1.Controllers
             }
         }
         [HttpGet]
-        public ActionResult Delete(string email)
+        public ActionResult Delete(int user_id)
         {
             DataAccessLayer db = new DataAccessLayer();
-            UserProfile user = new UserProfile();
-            return View(db.RetrieveByEmail(email));
+            UserProfile user = new UserProfile();/**/
+            return View(db.RetrieveById(user_id));
         }
-        [HttpPost]
-        public ActionResult Delete(UserProfile user)
-        {
+        /* [HttpPost]
+     public ActionResult Delete(int user_id)
+       {
 
-            DataAccessLayer db = new DataAccessLayer();
-            string result = db.DeleteData(user);
-            ViewData["result"] = result;
-            ModelState.Clear();
-            return View();
+           DataAccessLayer db = new DataAccessLayer();
+           string result = db.DeleteData(user_id);
+           ViewData["result"] = result;
+           ModelState.Clear();
+           return View();
 
-        }
+       }*/
 
     }
 }

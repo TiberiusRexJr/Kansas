@@ -4,8 +4,10 @@
 
 <div class="text-center">
     <h1 class="display-4">Bagabaris!</h1>
-    <div class="carousel">
+    @Html.ActionLink("Register", "InsertUserProfile", "Custom", null, new { @class="btn btn-primary btn-large"})
+    @Html.ActionLink("View Members","ShowAllUserProfiles","Custom",null,new { @class="btn btn-primary btn-large"})
+    @Html.ActionLink("Edit A Record","Edit","Custom",null,new {@class="btn btn-primary btn-large" })
+    @Html.ActionLink("Delete A Record","Delete","Custom",null,new { @class="btn btn-primary btn-large"})
 
-    </div>
     
 </div>

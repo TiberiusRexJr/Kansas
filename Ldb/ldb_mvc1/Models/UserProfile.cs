@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -21,10 +22,12 @@ namespace ldb_mvc1.Models
         [Required(ErrorMessage ="Enter Last Name")]
         public string lastName { get; set; }
 
-        public char sex { get; set; }
+        public string sex { get; set; }
 
         [Required(ErrorMessage = "Enter Date of Birth ")]
-
+        [DisplayName("Birthday")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode =true,DataFormatString ="{0:dd/MM/yyyy}")]
         public DateTime dob { get; set; }
 
         public int age { get; set; }
@@ -37,6 +40,6 @@ namespace ldb_mvc1.Models
 
         public List<UserProfile> ShowAllUserProfiles { get; set; }
 
-
+       
     }
 }

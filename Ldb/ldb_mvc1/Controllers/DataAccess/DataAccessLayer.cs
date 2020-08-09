@@ -127,7 +127,7 @@ namespace ldb_mvc1.Controllers.DataAccess
             }
         }
 
-        public string DeleteData(UserProfile user)
+        public string DeleteData(int user_id)
         {
             #region variables
             SqlCommand cmd = new SqlCommand(_procedureName,DbConnection);
@@ -137,7 +137,7 @@ namespace ldb_mvc1.Controllers.DataAccess
             string result = null;
             #endregion
             #region Setting Command parameters
-            cmd.Parameters.AddWithValue("@id", user.id);
+            cmd.Parameters.AddWithValue("@id", user_id);
             cmd.Parameters.AddWithValue("@firstname", null);
             cmd.Parameters.AddWithValue("@middlename", null);
             cmd.Parameters.AddWithValue("@lastname", null);
@@ -174,8 +174,9 @@ namespace ldb_mvc1.Controllers.DataAccess
             #region Variables
             DataSet dataset = new DataSet();
             SqlDataAdapter DataAdapter = new SqlDataAdapter();
-            List<UserProfile> ListUserProfiles = null;
+            List<UserProfile> ListUserProfiles = new List<UserProfile>();
 
+            DateTime datetime = new DateTime();
 
             SqlCommand cmd = new SqlCommand(_procedureName, DbConnection);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -205,20 +206,42 @@ namespace ldb_mvc1.Controllers.DataAccess
                 DbConnection.Open();
                 DataAdapter.SelectCommand = cmd;
                 DataAdapter.Fill(dataset);
-                
-                foreach(DataTable table in dataset.Tables )
+                for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
                 {
-                    foreach(DataRow row  in table.Rows)
-                    {
-                        UserProfile user = new UserProfile();
+                    UserProfile user = new UserProfile();
+                    user.id = Convert.ToInt32(dataset.Tables[0].Rows[i]["Id"]);
+                    user.firstName = dataset.Tables[0].Rows[i]["FirstName"].ToString();
+                    user.middleName = dataset.Tables[0].Rows[i]["MiddleName"].ToString();
+                    user.lastName = dataset.Tables[0].Rows[i]["LastName"].ToString();
+                    user.sex = dataset.Tables[0].Rows[i]["Sex"].ToString();
+                    user.dob = Convert.ToDateTime(dataset.Tables[0].Rows[i]["Dob"]);
+                    user.phone = Convert.ToInt32(dataset.Tables[0].Rows[i]["Phone"]);
+                    user.email = dataset.Tables[0].Rows[i]["Email"].ToString();
+                    user.department = Convert.ToInt32( dataset.Tables[0].Rows[i]["Department"]);
+                    user.age = Convert.ToInt32(dataset.Tables[0].Rows[i]["Department"]);
 
-                        user.id = row.Field<int>("Id");
-                        user.firstName = row.Field<string>("FirstName");
-                        user.lastName = row.Field<string>("LastName");
-
-                        ListUserProfiles.Add(user);
-                    }
+                    ListUserProfiles.Add(user);
                 }
+
+                /*   foreach (DataTable table in dataset.Tables)
+                   {
+                       foreach (DataRow row in table.Rows)
+                       {
+                           UserProfile user = new UserProfile();
+
+                           user.id =Convert.ToInt32(row.Field<int>("Id"));
+                           user.firstName = row.Field<string>("FirstName").ToString();
+                           user.middleName = row.Field<string>("MiddleName").ToString();
+                           user.lastName = row.Field<string>("LastName").ToString();
+                           user.sex = row.Field<string>("Sex").ToString();
+                           user.dob = Convert.ToDateTime(row.Field<DateTime>("Dob"));
+                           user.phone = Convert.ToInt32(row.Field<int>("Phone"));
+                           user.email = row.Field<string>("Email").ToString();
+                           user.department = Convert.ToInt32(row.Field<int>("Department"));
+                           user.age = Convert.ToInt32(row.Field<int>("Age"));
+                           ListUserProfiles.Add(user);
+                       }
+                   }*/
 
                 return ListUserProfiles;
             }
@@ -234,11 +257,11 @@ namespace ldb_mvc1.Controllers.DataAccess
 
            
         }
-        public UserProfile RetrieveByEmail(string userId)
+        public UserProfile RetrieveById(int user_id)
         {
             #region Variables
-            DataSet dataSet = new DataSet();
-            UserProfile user=new UserProfile();
+            DataSet dataset = new DataSet();
+            UserProfile user = new UserProfile();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
 
 
@@ -249,7 +272,7 @@ namespace ldb_mvc1.Controllers.DataAccess
 
             #endregion
             #region CommandParameters
-            cmd.Parameters.AddWithValue("@id", userId);
+            cmd.Parameters.AddWithValue("@id", user_id);
             cmd.Parameters.AddWithValue("@firstname", null);
             cmd.Parameters.AddWithValue("@middlename", null);
             cmd.Parameters.AddWithValue("@lastname", null);
@@ -267,15 +290,22 @@ namespace ldb_mvc1.Controllers.DataAccess
             {
                 DbConnection.Open();
                 sqlDataAdapter.SelectCommand = cmd;
-                sqlDataAdapter.Fill(dataSet);
+                sqlDataAdapter.Fill(dataset);
 
-                foreach(DataTable table in dataSet.Tables)
+                for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
                 {
-                    foreach(DataRow row in table.Rows)
-                    {
-                        user.firstName = row.Field<string>("FirstName");
-                        user.email = row.Field<string>("Email");
-                    }
+          
+                    user.id = Convert.ToInt32(dataset.Tables[0].Rows[i]["Id"]);
+                    user.firstName = dataset.Tables[0].Rows[i]["FirstName"].ToString();
+                    user.middleName = dataset.Tables[0].Rows[i]["MiddleName"].ToString();
+                    user.lastName = dataset.Tables[0].Rows[i]["LastName"].ToString();
+                    user.sex = dataset.Tables[0].Rows[i]["Sex"].ToString();
+                    user.dob = Convert.ToDateTime(dataset.Tables[0].Rows[i]["Dob"]);
+                    user.phone = Convert.ToInt32(dataset.Tables[0].Rows[i]["Phone"]);
+                    user.email = dataset.Tables[0].Rows[i]["Email"].ToString();
+                    user.department = Convert.ToInt32(dataset.Tables[0].Rows[i]["Department"]);
+                    user.age = Convert.ToInt32(dataset.Tables[0].Rows[i]["Department"]);
+
                 }
 
                 return user;

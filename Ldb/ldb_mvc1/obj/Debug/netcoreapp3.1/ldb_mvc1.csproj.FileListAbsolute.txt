@@ -2,7 +2,6 @@ C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\bin\Debug\netcoreapp3.1\appsettings.D
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\bin\Debug\netcoreapp3.1\ldb_mvc1.exe
-C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.csprojAssemblyReference.cache
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.AssemblyInfoInputs.cache
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.AssemblyInfo.cs
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.RazorAssemblyInfo.cache
@@ -114,7 +113,7 @@ C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.View
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.dll
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.pdb
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.genruntimeconfig.cache
+C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\Edit.cshtml.g.cs
+C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.csprojAssemblyReference.cache
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\InsertUserProfile.cshtml.g.cs
 C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\ShowAllUserProfiles.cshtml.g.cs
-C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\Edit.cshtml.g.cs
-C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\Delete.cshtml.g.cs

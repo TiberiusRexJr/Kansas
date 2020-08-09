@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ldb_mvc1.Models.UserProfile>
+﻿@model ldb_mvc1.Models.UserProfile
 
 @{
     Layout = null;
@@ -48,14 +48,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.department)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.userPictureUrl)
-            </th>
+          
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.ShowAllUserProfiles) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.id)
@@ -87,13 +85,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.department)
             </td>
+        
             <td>
-                @Html.DisplayFor(modelItem => item.userPictureUrl)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id = item.id },"Home") 
+                @Html.ActionLink("Details", "Details", new { id = item.id },"Home") 
+                @Html.ActionLink("Delete", "Delete", new { id = item.id },"Custom")
             </td>
         </tr>
 }
