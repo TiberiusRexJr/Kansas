@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj": {}
+    "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj": {
+    "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
+        "projectUniqueName": "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
         "projectName": "ldb_mvc1",
-        "projectPath": "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
+        "projectPath": "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\ldb_mvc1.csproj",
         "packagesPath": "C:\\Users\\rouni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rouni\\Documents\\ldb\\Ldb\\ldb_mvc1\\obj\\",
+        "outputPath": "C:\\Users\\rouni\\Desktop\\Kansas\\Ldb\\ldb_mvc1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

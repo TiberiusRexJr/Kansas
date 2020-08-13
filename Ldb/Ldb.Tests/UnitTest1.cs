@@ -2,6 +2,7 @@
 using System.Text;
 using System.Data.SqlClient;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace Ldb.Tests
 {
@@ -14,6 +15,7 @@ namespace Ldb.Tests
                 builder.InitialCatalog = "ldb";*/
         [TestMethod]
         public void Connection()
+
         {
               try
             {
@@ -53,6 +55,17 @@ namespace Ldb.Tests
             {
                 Console.WriteLine(e.ToString());
             }
+        }
+
+        Dictionary<string, string> user = new Dictionary<string, string>
+        {
+          {"user_id","2" }
+        };
+    
+    public void dictionary(Dictionary<string,string> user)
+        {
+
+            bool user_id2 = user.ContainsKey("user_id");
         }
     }
 }

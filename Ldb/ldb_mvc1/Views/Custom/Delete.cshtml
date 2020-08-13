@@ -85,10 +85,14 @@
             @Html.DisplayFor(model => model.userPictureUrl)
         </dd>
     </dl>
-    
-    <form asp-action="Delete" asp-controller="Custom" >
+    @ViewData["result"];
+    @{Dictionary<string,string> user = new Dictionary<string, string>
+        {
+          {"user_id","2" }
+        }; }
+    <form asp-controller="Custom" asp-all-route-data=user asp-action="Delete" >
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="ShowAllUserProfiles" asp-controller="Custom">Back to List</a>
     </form>
 </div>
 </body>

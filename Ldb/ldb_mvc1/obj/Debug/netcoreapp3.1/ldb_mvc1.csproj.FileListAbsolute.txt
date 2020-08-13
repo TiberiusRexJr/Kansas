@@ -237,3 +237,4 @@ C:\Users\rouni\Documents\ldb\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.dll
 C:\Users\rouni\Documents\ldb\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.pdb
 C:\Users\rouni\Documents\ldb\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.genruntimeconfig.cache
 C:\Users\rouni\Documents\ldb\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\ldb_mvc1.csprojAssemblyReference.cache
+C:\Users\rouni\Desktop\Kansas\Ldb\ldb_mvc1\obj\Debug\netcoreapp3.1\Razor\Views\Custom\Delete.cshtml.g.cs

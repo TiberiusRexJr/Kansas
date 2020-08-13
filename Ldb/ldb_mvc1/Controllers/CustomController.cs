@@ -79,20 +79,24 @@ namespace ldb_mvc1.Controllers
                 return View();
             }
         }
-        [HttpGet]
+       [HttpGet]
+       [Route("/CustomController/Delete",Name ="Delte_Get)")]
         public ActionResult Delete(int user_id)
         {
+            /*int id = Convert.ToInt32(user_id);*/
             DataAccessLayer db = new DataAccessLayer();
             UserProfile user = new UserProfile();
             return View(db.RetrieveById(user_id));
         }
-        [HttpPost]
-        public ActionResult Delete(UserProfile user)
-        {
 
+        [HttpPost]
+        [Route("/CustomController/Delete", Name = "Delete_Post")]
+        public ActionResult Delete(string user_id)
+        {
+            int id = Convert.ToInt32(user_id);
             DataAccessLayer db = new DataAccessLayer();
-            string result = db.DeleteData(user.id);
-            ViewData["result"] = result;
+            string result = db.DeleteData(id);
+            ViewData["result"] = result+id.ToString();
             ModelState.Clear();
             return View();
 
